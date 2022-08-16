@@ -21,9 +21,7 @@ def locate_cardsLinearSearch(cards,query):
 
 
 cards = [13,11,33,5,33,5,211,52,433,5,3,5,7,8,5,4,33,3]
-cards = Adatix_Array.array_sort(cards)
-print(cards)
-# print(cards)
-# query =7
-
-# print(locate_cardsLinearSearch(cards,query))
+cards = Adatix_Array.array_sort_asc(cards)
+query =7
+    
+print(locate_cardsLinearSearch(cards,query))

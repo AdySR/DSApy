@@ -1,10 +1,18 @@
 from array import array
 from operator import indexOf
-class Adatix_Array:
-    def array_sort(array_unsorted):
+class Adatix_Array():
+    def array_sort_asc(array_unsorted):
         for i in range(len(array_unsorted)):
             for j in range(i+1,len(array_unsorted)):
                 if array_unsorted[i]>array_unsorted[j]:
+                    array_unsorted[i],array_unsorted[j] =array_unsorted[j], array_unsorted[i]
+
+        return array_unsorted
+
+    def array_sort_desc(array_unsorted):
+        for i in range(len(array_unsorted)):
+            for j in range(i+1,len(array_unsorted)):
+                if array_unsorted[i]<array_unsorted[j]:
                     array_unsorted[i],array_unsorted[j] =array_unsorted[j], array_unsorted[i]
 
         return array_unsorted
