@@ -8,7 +8,7 @@ import re
 from turtle import pos, position
 
 
-def locate_cards(cards,query):
+def locate_cardsLinearSearch(cards,query):
     position=0
     while(position<len(cards)):
         if cards[position]==query:
@@ -22,4 +22,4 @@ def locate_cards(cards,query):
 cards = [13,11,33,5,33,5,211,52,433,5,3,5,7,8,5,4,33,3]
 query =7
 
-print(locate_cards(cards,query))
+print(locate_cardsLinearSearch(cards,query))
